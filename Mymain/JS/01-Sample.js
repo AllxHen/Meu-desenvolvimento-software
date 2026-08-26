@@ -288,7 +288,83 @@ console.log("regular");}
 else{console.log("insulficiente");}
 
 --18
+const prompt = require ("prompt-sync")();
 
+console.log("Faixa de velocidade!")
+let velocidade = Number(prompt("digite sua velocidade em km/h:"));
+
+if (velocidade > 100){
+console.log("Muito alta");}
+
+else if (velocidade >= 80){
+console.log("alta");}
+
+else if (velocidade >= 40){
+console.log("moderada");}
+
+else {console.log("baixa");}
+
+--19
+const prompt = require ("prompt-sync")();
+
+console.log("Calculadora");
+let numero1 = Number(prompt("digite seu primeiro numero:"));
+let numero2 = Number(prompt("digite seu segundo numero:"));
+let operacao = prompt("digite operação:");
+
+if (operacao === "+"){
+console.log(numero1+numero2);}
+else if (operacao === "-"){
+console.log(numero1+numero2);}
+else if (operacao === "*"){
+console.log(numero1*numero2);}
+else if (operacao === "/"){
+console.log(numero1/numero2)}
+
+--20
+const prompt = require("prompt-sync")();
+
+console.log("sistema de desconto por faixa!");
+
+let valor = Number( prompt("Digite o valor do produto:"));
+
+
+if (valor >= 500){
+console.log("o valor final da compra sera:" , (valor*0.8));
+}
+else if (valor >= 200){
+console.log("o valor final da compra sera:" , (valor*0.9));
+}
+else if (valor >=  100){
+console.log("o valor final da compra sera:" , (valor*0.95));
+}
+else{console.log("voce não esta apto a nenhum desconto!");
+}
+
+--21
+const prompt = require('prompt-sync')()
+
+console.log ("Festa")
+
+let idade = Number(prompt("Qual sua idade?:"))
+let convite = prompt("Voce tem convite?:").trim()
+if (idade >= 18 && convite=== "sim") {
+console.log ("Bem vindo a festa")
+} 
+else{console.log ("entrada nao autorizada")}
+
+--22
+const prompt = require ("prompt-sync")();
+
+console.log("desconto de passagem")
+
+let tipo = prompt ("Você é estudante?:");
+let idade = Number(prompt("Qual a sua idade?:"));
+
+if (tipo === "sim" || idade >= 60){console.log("Desconto aplicado");}
+else {console.log("desconto não aplicado");}
+
+--23
 
 
 
