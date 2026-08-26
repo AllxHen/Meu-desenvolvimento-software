@@ -186,6 +186,111 @@ let finalMes = salario - totalGasto;
 
 console.log("total gasto:" +totalGasto+ ", sobrou:" +finalMes);
 
+-------------------------------------------------------------------------
+
+--9
+const prompt = require("prompt-sync")();
+
+let nome = prompt("Digite seu nome:");
+let idade = prompt("Digite sua idade:");
+let endereco = prompt("Digite seu endereço:");
+let numero = Number( prompt("Digite numero:"));
+let numero2 = Number( prompt("Digite segundo numero:"));
+
+console.log("seu nome é: "+nome+" e sua idade é: "+idade+" voce mora na: "+endereco+" sua soma favorita é: "+ (numero+numero2));
+
+--10
+const prompt = require("prompt-sync")();
+let n1 = Number(prompt ("Primeiro numero "));
+let n2 = Number(prompt ("Segundo numero "));
+
+console.log("soma: " + (n1 + n2));
+console.log("subtracao: " + (n1 - n2));
+console.log("Multiplicacao: " + (n1 * n2));
+console.log("Divisao: " + (n1 / n2));
+
+--11
+const prompt = require("prompt-sync")();
+
+console.log("Calcular data de nascimento");
+let n1 = Number(prompt ("Ano atual: "));
+let n2 = Number(prompt ("Ano de nascimento: "));
+console.log("subtracao: " + (n1 - n2));
+
+--12
+const prompt = require("prompt-sync")();
+
+console.log("Conversor de temperatura")
+let celsius = Number (prompt("Coloque os celsius:"));
+let farenheit = (celsius*9/5+32);
+console.log(celsius+ "equivalem a:" +farenheit+ "farenheit");
+
+--13
+const prompt = require ("prompt-sync")();
+
+console.log("loja de compras!!!!");
+let produto = prompt ("Liste seu produto:");
+let preco = prompt ("Escolha a o preço:");
+let quantidade = Number(prompt ("Escolha a quantidade:"));
+let valortotal = (preco*quantidade);
+
+console.log("Resumo total do produto: " + "item" +produto+  " preço: " +preco+ " quantidade: " +quantidade+ " valor total: " +valortotal);
+
+--14
+const prompt = require ("prompt-sync")();
+
+console.log("O professor está na sala?");
+let resposta = prompt("Digite: ");
+
+if (resposta === "sim") {
+console.log("O professor e legal");
+} else { console.log("Irresponsável");
+}
+
+--15
+const prompt = require ("prompt-sync")();
+
+console.log("Verificador de numeros");
+let numero = prompt("digite um numero para saber se e maior de 100:");
+
+if (numero > "100") {
+console.log ("o numero é maior que 100");}
+else {console.log("seu numero e menor que 100");}
+
+--16
+const prompt = require("prompt-sync")();
+
+console.log("Verificador de classificação de idade")
+
+let idade = Number(prompt("digite sua idade:"));
+
+if (idade < 2){
+console.log ("vc é um baby");}
+else if (idade < 12){
+console.log ("vc é uma criança");}
+else if (idade < 18){
+console.log("você é adolecente");}
+else if (idade <60 ){console.log("vc é um adulto");}
+else {console.log("você é vovo");}
+
+--17
+const prompt = require ("prompt-sync")();
+
+console.log("nota max:10")
+let nota = Number(prompt ("digite a nota do aluno: "));
+
+if (nota == 10){
+console.log("Excelente");}
+else if (nota => 7){
+console.log("bom");}
+else if (nota == 6){
+console.log("regular");}
+else{console.log("insulficiente");}
+
+--18
+
+
+
 
 
 
