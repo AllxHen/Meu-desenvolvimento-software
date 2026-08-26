@@ -1,23 +1,21 @@
 USE db_sda;
--- Selects do banco SDA 
 
-SELECT id_perfil, id_status_geral from cliente; -- listando todos os ids dos clientes
+SELECT id_perfil, id_status_geral from cliente; 
 
-SELECT id_profissional, id_perfil, id_status_geral from profissional;-- listando todos os ids dos profissionais
+SELECT id_profissional, id_perfil, id_status_geral from profissional;
 
-SELECT nome from perfil ORDER BY nome ASC;-- listar todos os pacientes por ordem alfabetica
+SELECT nome from perfil ORDER BY nome ASC;
 
 SELECT id_agendamento, id_profissional, id_servico, id_cliente, id_status_geral, data_agendamento FROM agendamento ORDER BY id_agendamento, id_profissional, id_servico, id_cliente, id_status_geral, data_agendamento ASC; -- listar os ids e as datas em ordem crescente
 
 SELECT *
 FROM pagamento
-WHERE valor > 35; -- listar os valores maiores que 35 reais do pagamento
+WHERE valor > 35; 
 
 SELECT data_pagamento
 FROM pagamento
 WHERE data_pagamento > 20260317;
 
--- INNER JOIN do banco SDA
 
 SELECT
 c.id_perfil AS Perfil_cliente,
