@@ -15,3 +15,12 @@ let numero = 2
 while (numero <= 20) {
 console.log(numero + ".Banana")
 numero+=2;}
+
+--4
+let numero = 0
+let soma = 1
+while (soma <= 5){
+numero += soma 
+console.log("Resultado:" + numero)
+soma++
+;}
