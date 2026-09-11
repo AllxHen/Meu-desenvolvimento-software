@@ -365,6 +365,64 @@ if (tipo === "sim" || idade >= 60){console.log("Desconto aplicado");}
 else {console.log("desconto não aplicado");}
 
 --23
+const prompt = require ("prompt-sync")();
+
+let nota = Number(prompt("digite sua nota de matematica: "));
+let nota1 =Number(prompt("digite sua nota de historia: "));
+let nota2 =Number(prompt("digite sua nota de quimica: "));
+
+let media = (nota+nota1+nota2)/3;
+
+if (media >= 7){console.log(`Parabens vc foi aprovado :D ! Media: ${media} .`)}
+    else {console.log(`sua media foi abaixo da media de aprovação :( Media: ${media}.`)}
+
+--24
+const prompt = require ("prompt-sync")();
+
+let nota =Number(prompt("nota de matematica: "));
+let nota1 =Number(prompt("nota de historia: "));
+let nota2 =Number(prompt("nota de quimica: "));
+let frequencia =Number(prompt("Frequencia do aluno: "));
+
+let media = (nota+nota1+nota2)/3;
+
+if (media >= 6 && frequencia >= 75){console.log(`Aluno Aprovado! Media: ${media}, Frequencia: ${frequencia}% :D`)}
+    else {console.log(`aluno não atingiu por falta ou media! Media: ${media}, Frequencia: ${frequencia}% :( `)}
+
+--25
+const prompt = require ("prompt-sync")();
+
+let usuario = prompt("digite o nome do usuario: ");
+let senha = prompt("digite a senha do usuario: ");
+
+if (usuario === "Dababi01" && senha === "LetsGouuu1"){
+    console.log(`acesso autorizado! Bem vindo Sr.ª ou Sra: ${usuario}!`)}
+    else {console.log(`Senha ou Nome de usuario Incorreto!`)}
+
+--26
+const prompt = require ("prompt-sync")();
+
+let idade = Number(prompt("Digite sua idade: "))
+let rendaMensal = Number(prompt("Digite sua renda mensal:"))
+
+if (idade >= 21 && rendaMensal >= 2000){console.log("Emprestimo autorizado!")}
+    else{console.log("Acesso negado!")}
+
+--27
+const prompt = require ("prompt-sync")();
+
+let valorCompra = Number(prompt("digite o valor da compra: "));
+let vip = prompt("Vc assina nosso plano vip?: ");
+
+if (valorCompra >= 300 || vip === "sim"){console.log("desconto aplicado!")}
+    else {console.log("Desconto negado!")}
+
+--28
+
+
+
+
+
 
 
 
