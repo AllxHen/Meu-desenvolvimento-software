@@ -24,3 +24,22 @@ numero += soma
 console.log("Resultado:" + numero)
 soma++
 ;}
+
+--5
+const prompt = require("prompt-sync")();
+
+let horasEstacionadas = Number(prompt("digite o total de horas"))
+    saldoCliente = 35,
+    valorHoras = 8;
+
+while (saldoCliente >= valorHoras) {
+
+    saldoCliente -= valorHoras;
+
+    horasEstacionadas++;
+
+    console.log("Saldo restante: R$ " + saldoCliente);
+}
+
+console.log("Horas pagas: " + horasEstacionadas);
+console.log("Saldo final: R$ " + saldoCliente);
