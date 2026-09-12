@@ -437,7 +437,17 @@ if (compra >= 150 && cupom === "sim"){console.log(`Cupom de desconto ativado, o 
     else {console.log(`Desconto não aplicado! valor total será: ${compra}`)}
 
 --30
-const prompt =
+const prompt = require ("prompt-sync")();
+
+let vida = Number(prompt("digite a vida do jogador(Ex: 1 a 5): "));
+
+if (vida >= 3){console.log(`voce e invencivel! Vida restantes: ${vida}`)}
+    else if (vida > 0){console.log(`cuidado pra não morrer! Vida restantes: ${vida}`)}
+    else {console.log(`se fodeu! vida restantes ${vida}`)}
+
+--31
+
+                  
                          
 
 
