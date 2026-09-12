@@ -418,6 +418,34 @@ if (valorCompra >= 300 || vip === "sim"){console.log("desconto aplicado!")}
     else {console.log("Desconto negado!")}
 
 --28
+const prompt = require ("prompt-sync")();
+
+let horas = Number(prompt("Digite as horas estacionadas"));
+let valorh = 5
+
+if (horas <= 1){console.log(`total a pagar: ${valorh} R$`)}
+    else if (horas <= 4){console.log(`total a pagar: ${horas * 4} R$`)}
+    else {console.log(`total a pagar: ${horas * 3} R$`)}
+
+--29
+const prompt = require ("prompt-sync")();
+
+let compra = Number(prompt("digite o valor da compra:"));
+let cupom = prompt("Tem cupom de desconto?: ");
+
+if (compra >= 150 && cupom === "sim"){console.log(`Cupom de desconto ativado, o valor total será: ${compra*0.85}`)}
+    else {console.log(`Desconto não aplicado! valor total será: ${compra}`)}
+
+--30
+const prompt =
+                         
+
+
+
+
+                        
+                
+
 
 
 
