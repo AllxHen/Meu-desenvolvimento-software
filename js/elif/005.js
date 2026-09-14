@@ -1,4 +1,4 @@
-let compra = 150
+let compra = 80
 let total = 0
 
 if (compra >= 200){
@@ -11,4 +11,5 @@ else if (compra >= 100){
     console.log(`10% de desconto! valor total: ${total}`)
     
 }
-else {console.log("sem desconto")}
+else {total = compra 
+    console.log(`sem desconto! valor total: ${total}`)}
